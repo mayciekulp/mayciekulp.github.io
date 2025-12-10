@@ -1,0 +1,78 @@
+
+
+/* nav starts */
+header {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("FinalWebsiteImages/slideImages/fihhopefully.jpg");
+}
+
+nav {
+    background-color: rgb(231,111,81);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.447);
+}
+
+nav h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    color: rgb(246, 252, 255);
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px
+}
+
+.nav-links a {
+    color: rgb(246, 252, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover{
+    color: rgb(244,162,97);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    width: 25px;
+    height: 18px;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    background: rgb(204,215,198);
+    height: 30px;
+    width: 100%;
+    border-radius: 2px;
+}
+/* nav end */
+
+form {
+    background-color: rgb(37, 150, 190);
+    width: 675px;
+    padding: 20px;
+    margin: 50px auto; 
+    border-radius: 8px;
+    color: rgb(239,241,237);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+form h1 {
+    text-align: center;
+}

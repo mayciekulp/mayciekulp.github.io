@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactStyles.css">
+    <link rel="icon" type="image/x-icon" href="FinalWebsiteImages/nature.png">
+    <title>Debsite</title>
+</head>
+<body>
+<script src="other.js"></script>
+<!-- nav -->
+    <header>
+        <nav>
+<!-- hidden checkbox -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle"/>
+<!-- hamburger icon -->
+         <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+         </label>
+            <h1>DEBSITE</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="other.html">HISTORY</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="FAQForm">
+    <form action="ThankYou_Final.html">
+        <!--beginning of form-->
+        <h1>Questionare Information</h2>
+        <table>
+            <tr>
+                <td><label name="fb">First Name:</label></td>
+                <td><input type="text" for="fb"></td>
+            </tr>
+            <tr>
+                <td><label name="ln">Last Name:</label></td>
+                <td><input type="text" for="ln"></td>
+            </tr>
+            <tr>
+                <td><label name="pnum">Phone Number:</label></td>
+                <td><input type="text" for="pnum"></td>
+            </tr>
+            <tr>
+                <td><label name="strad">Email:</label></td>
+                <td><input type="text" for="strad"></td>
+            </tr>
+        </table>
+        <!--end of table-->
+
+        <!--delivery options-->
+        <h2>Why do you want Deb's advice?</h2>
+        <input type="radio" name="notsure">
+        <label>Not sure, she just seems very wise</label><br>
+        <input type="radio" name="expert">
+        <label>She is an expert in the field in which my question is relavent</label><br>
+        <input type="radio" name="undisclosed">
+        <label>I do not wish to disclose that information</label><br>
+        <br/>
+        <br/>
+
+        <!--pizza toppings-->
+        <h2>How would you like Deb to respond?</h2>
+        <input type="checkbox" name="text">
+        <label for="text">Text message</label>
+        <br/>
+        <input type="checkbox" name="email">
+        <label for="email">Email</label>
+        <br/>
+        <input type="checkbox" name="phonecall">
+        <label for="phonecall">Phone call</label>
+        <br/>
+        <input type="checkbox" name="zoom">
+        <label for="zoom">Zoom call</label>
+        <br/>
+        <input type="checkbox" name="letter">
+        <label for="letter">Handwritten letter</label>
+        <br/>
+        <input type="checkbox" name="limerick">
+        <label for="limerick">Original limerick</label>
+        <br/>
+        <textarea>Enter any additional instructions here!</textarea>
+        <br/>
+        <br/>
+
+        <!--pizza size-->
+                <h2>What kind of question do you have for Deb?</h2>
+        <select>
+            <option>I am seeking Deb's advice</option>
+            <option>I have a question about Deb's life</option>
+            <option>I just want to talk to Deb</option>
+            <option>Other option I wish not to disclose</option>
+        </select>
+        <br/>
+        <br/>
+        <br/>
+        <!--form buttons!-->
+        <h3>All done? Click submit and we will get started on your order!</h2>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+        </section>
+    </main>
