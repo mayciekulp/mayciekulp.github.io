@@ -1,20 +1,14 @@
-<!-- Introductory page (likely will use a hero page for this)
-Hyperlinks to other pages (About, Hiking, Plants, Contact)
-Photos -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="indexStyles.css">
+    <link rel="stylesheet" href="otherStyles.css">
     <link rel="icon" type="image/x-icon" href="FinalWebsiteImages/nature.png">
     <title>Debsite</title>
 </head>
 <body>
-<script src="index.js"></script>
+<script src="other.js"></script>
 <!-- nav -->
     <header>
         <nav>
@@ -35,85 +29,49 @@ Photos -->
             </ul>
         </nav>
     </header>
-<!-- end nav -->
- <!-- columns -->
+    <main>
+<!--FOOD GALLERY SECTION-->
+    <section>
+        <div class="food-gallery">
+<div class="food-gallery-item">
+  <a target="_blank" href="FinalWebsiteImages/slideImages/debeatingmcdonalds.jpg">
+    <img src="FinalWebsiteImages/slideImages/debeatingmcdonalds.jpg" alt="Deb eating McDonalds" width="600" height="400">
+  </a>
+  <div class="desc">McDonalds</div>
+</div>
 
-<!-- main section -->
-  <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to the Debsite</h1>
-            <a href="#about.html" class="btn">Learn more!</a>
-        </div>
-    </section>
-<!-- who is deb introduction -->
-<main>
-<section id="WhoAmI">
-    <br/>
-    <h1>So, who is "Deb"?</h1>
-    <div class="flex-container">
-      <div class="team-member-card">
-         <a href="https://www.youtube.com/watch?v=jSPpbOGnFgk">
-        <img src="FinalWebsiteImages/slideImages/prettydeb.jpeg" height="400" width="auto" alt="AllTrails"></a>
-      </div>
-    <p id="debintro">This is my best friend, Sarah, or better known as "Imaginary Deborah". Deb is a fellow sophomore 
-        here at Juniata College and is currently studying wildlife conservation and muesuem studies. She grew up in Linglestown, PA 
-        is one of the iconic baristas at St. Thomas Roasters. Her most infamous claim to fame is her car, 
-        <a href=https://en.wikipedia.org/wiki/Buick_Century>"Dirty Dan"</a> a 2001 Buick Century.
-    <br/>
-    <br/>
-        Deb and I met during inbound our freshmen year and she was the first friend I made at college. Camping was 
-        an absolute diaster as it rained and was freezing the ENTIRE time but meeting Deb made it all worth it. In our spare time, 
-        Deb and I like to go adventuring, eat TacoBell, and pester her poor roommate. 
-    <br/>
-    <br/>
-        Deb is arguably one of the most interesting individuals I have had the pleasure of meeting thus far. She is a woman of many interests and 
-        talents, including but not limited to slugs, trout, the NYC subway system, fly fishing, and puppeteering. 
-    <br/>
-    <br/>
-        Throughout this Debsite you will find a plethora of Deb, ranging from a crowd favorite "Ask Deb" Q&A to a timeline of her development into the 
-        Deb we know and love today. 
-    </p>
-</section>
-<!-- making deb poll -->
- <section>
-        <div class="poll">
-            <h2>How do you think Deb introduced herself to me while camping?</h2>
-            <br/>
-            <form method="post">
-                <div class="poll-choices">
-                    <button type=button onclick="goToHistoryWrong()">Singing "Don't Stop Me Now" directly in my ear
-                    </button>
-                </div>
-                <br/>
-                <div class="poll-choices">
-                    <button type=button onclick="goToHistoryRight()">Threatening to throw me into the campfire
-                    </button>
-                </div>
-                <br/>
-                <div class="poll-choices">
-                    <button type=button onclick="goToHistoryWrong()">Stealing my s'more that I had just finished making
-                    </button>
-                </div>
-                <br/>
-                <div class="poll-choices">
-                    <button type=button onclick="goToHistoryWrong()">Ramming directly into the side of my kayak and almost flipping me over
-                    </button>
-                </div>
-                </div>
-                </div>
-                </div>
-                </div>
-            </form>
-            <br/>
-            <br/>
-        </div>    
-    </div>
-    </section>
-  </main>
+<div class="food-gallery-item">
+  <a target="_blank" href="FinalWebsiteImages/slideImages/debeatingmorehotdogs.jpeg">
+    <img src="FinalWebsiteImages/slideImages/debeatingmorehotdogs.jpeg" alt="Deb Eating Hotdogs" width="600" height="400">
+  </a>
+  <div class="desc">More Sheetz</div>
+</div>
 
-<!-- footer -->
-    <footer>
-    <p> &copy; 2025 My Website | Designed by Maycie Kulp</p>
-        <a href="www.instagram.com"></a>
-</body>
+<div class="food-gallery-item">
+  <a target="_blank" href="FinalWebsiteImages/slideImages/Screenshot 2025-12-08 220438.png">
+    <img src="FinalWebsiteImages/slideImages/Screenshot 2025-12-08 220438.png" alt="Deb Eating TacoBell" width="600" height="400">
+  </a>
+  <div class="desc">TacoBell</div>
+</div>
+
+<div class="food-gallery-item">
+  <a target="_blank" href="FinalWebsiteImages/slideImages/Screenshot 2025-12-08 220248.png">
+    <img src="FinalWebsiteImages/slideImages/Screenshot 2025-12-08 220248.png" alt="Deb Eating Sheetz" width="600" height="400">
+  </a>
+  <div class="desc">Sheetz</div>
+</div>
+</div>
+    </section>
+<!--EVIL CHILD DEB-->
+<h2>Deb Food Calculator</h2>
+<h3>Want to get in the head of Deb? Use this calculator to order just like she would if she went to Sheetz!</h3>
+ <form onsubmit="return getRecommendation()">
+    <input type="text" id="hungry" placeholder="How hungry are you on a scale of 1-10?" size="40" style="text-align: center; background-color: aliceblue;">
+    <input type="text" id="thirsty" placeholder="How angry are you on a scale of 1-10?" size="40" style="text-align: center; background-color: aliceblue;">
+    <input type="submit" value="Get Recommendation">
+  </form>
+
+  <p id="result"></p>
 </html>
+
+<!--HOBBY DEB-->
